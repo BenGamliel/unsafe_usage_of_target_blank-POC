@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="script.js"></script>
+    
+<input type=submit onclick="newWindowOpener('target.html')" value=Unsafe-newWindowOpener ></input><br><br>
+
+<input type=submit onclick="WindowOpen1('target.html')" value=Unsafe-WindowOpen1 ></input><br><br>
+
+<input type=submit onclick="WindowOpen2('target.html')" value=Unsafe-WindowOpen2 ></input><br><br>
+
+<input type=submit onclick="WindowOpen3('target.html')" value=safe-WindowOpen3-noopener ></input><br><br>
+
+<input type=submit onclick="WindowOpen4('target.html')" value=safe-WindowOpen4-noreferrer ></input><br><br>
+
+<input type=submit onclick="WindowOpen5('target.html')" value=Unsafe-WindowOpen5-noopener ></input><br><br>
+
+<input type=submit onclick="WindowOpen6('target.html')" value=Unsafe-WindowOpen6-noreferrer ></input><br><br>
+
+<!-- <input type=submit onclick="newWindowOpener('anotherTarget.html')" value=Unsafe-newWindowOpener-windowLocation ></input><br><br>
+-->  
+<input type=submit onclick="newWindowOpenerSafe7('target.html')" value=Safe-newWindowOpener7 ></input><br><br>
+
+<input type=submit onclick="newWindowOpener8('target.html')" value=safe8-newWindowOpener ></input><br><br>
+
+<input type=submit onclick="newWindowOpenerSafe9('target.html')" value=Safe2-newWindowOpener9 ></input><br><br>
+
+
+<a href="target.html" target="_blank" rel="opener">1)Unsafe Href- rel =opener</a><br><br>
+<a href="target.html" target="_blank">2)Safe Href target="blank"</a><br><br>
+<a href="target.html" target=_blank>2.1)Safe Href target=blank</a><br><br>
+<a href="target.html" target="_blank" rel="noopener" >3)Safe Href rel="noopener"</a>
+<br><br>
+<a href="target.html" target="_blank" rel=noopener >4)Safe Href rel=noopener</a>
+<br><br>
+<a href="target.html" target="_blank" rel="noreferrer" >5)Safe Href rel="noreferrer"</a> 
+<br><br>
+<a href="target.html" target="_blank" rel="noreferrer noopener" >6)Safe Href rel="noreferrernoopener"</a><br><br>
+<a href="target.html" target="_blank" rel="noopener noreferrer" >7)Safe Href rel="noreferrer noopener"</a>
+</body>
+</html>
