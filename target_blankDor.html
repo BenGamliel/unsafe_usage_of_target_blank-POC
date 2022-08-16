@@ -1,0 +1,14 @@
+<script src="script.js"></script>
+<input type=submit onclick="newWindowOpener('target.html')" value=Unsafe ></input>
+<input type=submit onclick="newWindowOpener2('target.html')" value=Unsafe2 ></input>
+<input type=submit onclick="newWindowOpener3('target.html')" value=Unsafe3 ></input>
+<input type=submit onclick="newWindowOpenerSafe('target.html')" value=Safe ></input>
+<input type=submit onclick="newWindowOpenerSafe2('target.html')" value=Safe2 ></input>
+
+<a href="target.html" target="_blank">Unsafe Href</a>
+<a href="target.html">Safe Href 1</a>
+<a href="target.html" target="_blank" rel="noopener" >Safe Href 2</a>
+<a href="target.html" target="_blank" rel=noopener >Safe Href 2</a> <!-- FP! -->
+<a href="target.html" target="_blank" rel="noreferrer" >Safe Href 3</a> <!-- FP! -->
+<a href="target.html" target="_blank" rel="noreferrer noopener" >Safe Href 4</a>
+<a href="target.html" target="_blank" rel="noopener noreferrer" >Safe Href 5</a>
